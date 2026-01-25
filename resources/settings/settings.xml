@@ -1,0 +1,165 @@
+<settings>
+    <setting propertyKey="@Properties.Field1" title="@Strings.Field1">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.none</listEntry>
+            <listEntry value="1">@Strings.heart</listEntry>
+            <listEntry value="2">@Strings.stress</listEntry>
+            <listEntry value="3">@Strings.calories</listEntry>
+            <listEntry value="4">@Strings.date</listEntry>
+            <listEntry value="5">@Strings.time</listEntry>
+            <listEntry value="6">@Strings.body</listEntry>
+            <listEntry value="7">@Strings.caloriesPerc</listEntry>
+            <listEntry value="8">@Strings.steps</listEntry>
+            <listEntry value="9">@Strings.stepsPerc</listEntry>
+            <listEntry value="10">@Strings.minutes</listEntry>
+            <listEntry value="11">@Strings.battery</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.Field2" title="@Strings.Field2">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.none</listEntry>
+            <listEntry value="1">@Strings.heart</listEntry>
+            <listEntry value="2">@Strings.stress</listEntry>
+            <listEntry value="3">@Strings.calories</listEntry>
+            <listEntry value="4">@Strings.date</listEntry>
+            <listEntry value="5">@Strings.time</listEntry>
+            <listEntry value="6">@Strings.body</listEntry>
+            <listEntry value="7">@Strings.caloriesPerc</listEntry>
+            <listEntry value="8">@Strings.steps</listEntry>
+            <listEntry value="9">@Strings.stepsPerc</listEntry>
+            <listEntry value="10">@Strings.minutes</listEntry>
+            <listEntry value="11">@Strings.battery</listEntry>
+        </settingConfig>
+    </setting>
+
+
+    <setting propertyKey="@Properties.barTop" title="@Strings.barTop">
+            <settingConfig type="list">
+                <listEntry value="0">@Strings.none</listEntry>
+                <listEntry value="2">@Strings.stress</listEntry>
+                <listEntry value="6">@Strings.body</listEntry>
+                <listEntry value="7">@Strings.caloriesPerc</listEntry>
+                <listEntry value="9">@Strings.stepsPerc</listEntry>
+                <listEntry value="11">@Strings.battery</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.barBottom" title="@Strings.barBottom">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.none</listEntry>
+            <listEntry value="2">@Strings.stress</listEntry>
+            <listEntry value="6">@Strings.body</listEntry>
+            <listEntry value="7">@Strings.caloriesPerc</listEntry>
+            <listEntry value="9">@Strings.stepsPerc</listEntry>
+            <listEntry value="11">@Strings.battery</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.BatteryField" title="@Strings.BatteryField">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.none</listEntry>
+            <listEntry value="6">@Strings.body</listEntry>
+            <listEntry value="7">@Strings.caloriesPerc</listEntry>
+            <listEntry value="9">@Strings.stepsPerc</listEntry>
+            <listEntry value="11">@Strings.battery</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.caloriesGoal" title="@Strings.caloriesGoal">
+        <settingConfig type="numeric" min="1" max="10000" required="true"/>
+    </setting>
+
+    <setting propertyKey="@Properties.animationSetting" title="@Strings.animationSetting">
+        <settingConfig type="boolean" required="true"/>
+  </setting>
+
+    <setting propertyKey="@Properties.stepsGoal" title="@Strings.stepsGoal">
+        <settingConfig type="numeric" min="1" max="1000000" required="true"/>
+    </setting>
+
+    <setting propertyKey="@Properties.fgColor" title="@Strings.fgColor">
+  <settingConfig type="list">
+    <listEntry value="0x000000">@Strings.c_000000</listEntry>
+    <listEntry value="0x000055">@Strings.c_000055</listEntry>
+    <listEntry value="0x0000AA">@Strings.c_0000AA</listEntry>
+    <listEntry value="0x0000FF">@Strings.c_0000FF</listEntry>
+
+    <listEntry value="0x005500">@Strings.c_005500</listEntry>
+    <listEntry value="0x005555">@Strings.c_005555</listEntry>
+    <listEntry value="0x0055AA">@Strings.c_0055AA</listEntry>
+    <listEntry value="0x0055FF">@Strings.c_0055FF</listEntry>
+
+    <listEntry value="0x00AA00">@Strings.c_00AA00</listEntry>
+    <listEntry value="0x00AA55">@Strings.c_00AA55</listEntry>
+    <listEntry value="0x00AAAA">@Strings.c_00AAAA</listEntry>
+    <listEntry value="0x00AAFF">@Strings.c_00AAFF</listEntry>
+
+    <listEntry value="0x00FF00">@Strings.c_00FF00</listEntry>
+    <listEntry value="0x00FF55">@Strings.c_00FF55</listEntry>
+    <listEntry value="0x00FFAA">@Strings.c_00FFAA</listEntry>
+    <listEntry value="0x00FFFF">@Strings.c_00FFFF</listEntry>
+
+    <listEntry value="0x550000">@Strings.c_550000</listEntry>
+    <listEntry value="0x550055">@Strings.c_550055</listEntry>
+    <listEntry value="0x5500AA">@Strings.c_5500AA</listEntry>
+    <listEntry value="0x5500FF">@Strings.c_5500FF</listEntry>
+
+    <listEntry value="0x555500">@Strings.c_555500</listEntry>
+    <listEntry value="0x555555">@Strings.c_555555</listEntry>
+    <listEntry value="0x5555AA">@Strings.c_5555AA</listEntry>
+    <listEntry value="0x5555FF">@Strings.c_5555FF</listEntry>
+
+    <listEntry value="0x55AA00">@Strings.c_55AA00</listEntry>
+    <listEntry value="0x55AA55">@Strings.c_55AA55</listEntry>
+    <listEntry value="0x55AAAA">@Strings.c_55AAAA</listEntry>
+    <listEntry value="0x55AAFF">@Strings.c_55AAFF</listEntry>
+
+    <listEntry value="0x55FF00">@Strings.c_55FF00</listEntry>
+    <listEntry value="0x55FF55">@Strings.c_55FF55</listEntry>
+    <listEntry value="0x55FFAA">@Strings.c_55FFAA</listEntry>
+    <listEntry value="0x55FFFF">@Strings.c_55FFFF</listEntry>
+
+    <listEntry value="0xAA0000">@Strings.c_AA0000</listEntry>
+    <listEntry value="0xAA0055">@Strings.c_AA0055</listEntry>
+    <listEntry value="0xAA00AA">@Strings.c_AA00AA</listEntry>
+    <listEntry value="0xAA00FF">@Strings.c_AA00FF</listEntry>
+
+    <listEntry value="0xAA5500">@Strings.c_AA5500</listEntry>
+    <listEntry value="0xAA5555">@Strings.c_AA5555</listEntry>
+    <listEntry value="0xAA55AA">@Strings.c_AA55AA</listEntry>
+    <listEntry value="0xAA55FF">@Strings.c_AA55FF</listEntry>
+
+    <listEntry value="0xAAAA00">@Strings.c_AAAA00</listEntry>
+    <listEntry value="0xAAAA55">@Strings.c_AAAA55</listEntry>
+    <listEntry value="0xAAAAAA">@Strings.c_AAAAAA</listEntry>
+    <listEntry value="0xAAAAFF">@Strings.c_AAAAFF</listEntry>
+
+    <listEntry value="0xAAFF00">@Strings.c_AAFF00</listEntry>
+    <listEntry value="0xAAFF55">@Strings.c_AAFF55</listEntry>
+    <listEntry value="0xAAFFAA">@Strings.c_AAFFAA</listEntry>
+    <listEntry value="0xAAFFFF">@Strings.c_AAFFFF</listEntry>
+
+    <listEntry value="0xFF0000">@Strings.c_FF0000</listEntry>
+    <listEntry value="0xFF0055">@Strings.c_FF0055</listEntry>
+    <listEntry value="0xFF00AA">@Strings.c_FF00AA</listEntry>
+    <listEntry value="0xFF00FF">@Strings.c_FF00FF</listEntry>
+
+    <listEntry value="0xFF5500">@Strings.c_FF5500</listEntry>
+    <listEntry value="0xFF5555">@Strings.c_FF5555</listEntry>
+    <listEntry value="0xFF55AA">@Strings.c_FF55AA</listEntry>
+    <listEntry value="0xFF55FF">@Strings.c_FF55FF</listEntry>
+
+    <listEntry value="0xFFAA00">@Strings.c_FFAA00</listEntry>
+    <listEntry value="0xFFAA55">@Strings.c_FFAA55</listEntry>
+    <listEntry value="0xFFAAAA">@Strings.c_FFAAAA</listEntry>
+    <listEntry value="0xFFAAFF">@Strings.c_FFAAFF</listEntry>
+
+    <listEntry value="0xFFFF00">@Strings.c_FFFF00</listEntry>
+    <listEntry value="0xFFFF55">@Strings.c_FFFF55</listEntry>
+    <listEntry value="0xFFFFAA">@Strings.c_FFFFAA</listEntry>
+    <listEntry value="0xFFFFFF">@Strings.c_FFFFFF</listEntry>
+  </settingConfig>
+</setting>
+
+</settings>

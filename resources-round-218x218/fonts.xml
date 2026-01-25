@@ -1,0 +1,4 @@
+<fonts>
+    <font id="fontSmall" filename="font_small.fnt"/>
+    <font id="fontBig" filename="font_big.fnt"/>
+</fonts>

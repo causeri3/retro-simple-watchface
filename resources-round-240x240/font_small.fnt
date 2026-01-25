@@ -1,0 +1,17 @@
+info face="digital-7" size=36 bold=0 italic=0 charset="" unicode=1 stretchH=100 smooth=1 aa=1 padding=1,1,1,1 spacing=1,1
+common lineHeight=24 base=12 scaleW=190 scaleH=24 pages=1 packed=0
+page id=0 file="font_small.png"
+chars count=13
+char id=48 x=0 y=0 width=17 height=24 xoffset=0 yoffset=0 xadvance=18 page=0 chnl=0
+char id=49 x=18 y=0 width=6 height=24 xoffset=0 yoffset=0 xadvance=7 page=0 chnl=0
+char id=50 x=25 y=0 width=17 height=24 xoffset=0 yoffset=0 xadvance=18 page=0 chnl=0
+char id=51 x=43 y=0 width=17 height=24 xoffset=0 yoffset=0 xadvance=18 page=0 chnl=0
+char id=52 x=61 y=0 width=17 height=24 xoffset=0 yoffset=0 xadvance=18 page=0 chnl=0
+char id=53 x=79 y=0 width=17 height=24 xoffset=0 yoffset=0 xadvance=18 page=0 chnl=0
+char id=54 x=97 y=0 width=17 height=24 xoffset=0 yoffset=0 xadvance=18 page=0 chnl=0
+char id=55 x=115 y=0 width=17 height=24 xoffset=0 yoffset=0 xadvance=18 page=0 chnl=0
+char id=56 x=133 y=0 width=17 height=24 xoffset=0 yoffset=0 xadvance=18 page=0 chnl=0
+char id=57 x=151 y=0 width=17 height=24 xoffset=0 yoffset=0 xadvance=18 page=0 chnl=0
+char id=58 x=169 y=0 width=6 height=24 xoffset=0 yoffset=0 xadvance=7 page=0 chnl=0
+char id=124 x=176 y=0 width=6 height=24 xoffset=0 yoffset=0 xadvance=7 page=0 chnl=0
+char id=46 x=183 y=0 width=6 height=24 xoffset=0 yoffset=0 xadvance=7 page=0 chnl=0
