@@ -1,4 +1,4 @@
-# Garmin Watch Face: [Retro-Simplistic](https://apps.garmin.com/en-US/apps/46e9c768-4eb1-470c-93a8-29dd11219b61) 
+# Garmin Watch Face: [Retro-Simple](https://apps.garmin.com/en-US/apps/46e9c768-4eb1-470c-93a8-29dd11219b61) 
 
 
 <table>
@@ -12,6 +12,7 @@
 <img src="https://github.com/user-attachments/assets/80567836-f437-4e87-bb3d-519967e31025" width="900"/>
 
 <img src="https://github.com/user-attachments/assets/62a30191-be2f-4fd4-a4c9-7889bad82fc8" width="900"/>
+
 <img src="https://github.com/user-attachments/assets/38da0453-97a0-47b6-acde-3e46e35a23ec" width="900"/>
 
 ## Set-up
