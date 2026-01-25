@@ -3,7 +3,7 @@
 
 <table>
   <tr>
-    <td><img src="https://github.com/user-attachments/assets/ded59a33-1a1e-47a3-b950-49b38d6898b5" width="400"/></td>
+    <td><img src="https://github.com/user-attachments/assets/ded59a33-1a1e-47a3-b950-49b38d6898b5" width="300"/></td>
     <td> A simplistic watch face in retro style. Inspired by old Casio watches. 5 customizable fields. 64 colours to choose from. </td>
   </tr>
 </table>
