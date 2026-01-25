@@ -3,13 +3,13 @@
 
 <table>
   <tr>
-    <td><img src="https://github.com/user-attachments/assets/ded59a33-1a1e-47a3-b950-49b38d6898b5" width="200"/></td>
+    <td><img src="https://github.com/user-attachments/assets/ded59a33-1a1e-47a3-b950-49b38d6898b5" width="400"/></td>
     <td> A simplistic watch face in retro style. Inspired by old Casio watches. 5 customizable fields. 64 colours to choose from. </td>
   </tr>
 </table>
 
 ---
-<img src="https://github.com/user-attachments/assets/c79612de-1ab9-46d0-bc3d-2fb17d6307dc" width="900"/>
+<img src="https://github.com/user-attachments/assets/80567836-f437-4e87-bb3d-519967e31025" width="900"/>
 
 <img src="https://github.com/user-attachments/assets/62a30191-be2f-4fd4-a4c9-7889bad82fc8" width="900"/>
 <img src="https://github.com/user-attachments/assets/38da0453-97a0-47b6-acde-3e46e35a23ec" width="900"/>
