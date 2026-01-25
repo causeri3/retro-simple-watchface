@@ -24,7 +24,8 @@ class simplisticView extends WatchUi.WatchFace{
         //Log.showMemoryUsage();
         fields.init(dc);
         //Log.debug("After init fields");
-        //Log.showMemoryUsage();        dots = BenDayDotsRectangle.build();
+        //Log.showMemoryUsage();        
+        dots = BenDayDotsRectangle.build();
     }
 
 
