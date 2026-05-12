@@ -40,8 +40,8 @@ class simplisticView extends WatchUi.WatchFace{
 
 
     function onUpdate(dc as Dc) as Void {
-        Log.debug("onUpdate");
-        Log.showMemoryUsage();
+        //Log.debug("onUpdate");
+        //Log.showMemoryUsage();
         if (dots != null) {
             dc.drawBitmap(0, 0, dots);
         }
