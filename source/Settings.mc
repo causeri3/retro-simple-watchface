@@ -149,6 +149,20 @@ module Settings {
         return (fieldString != null) ? fieldString : "";
     }
 
+        function getPropertiesAsDict() as Dictionary {
+        var keys = [
+            "Field1", "Field2", "barTop", "barBottom",
+            "BatteryField", "stepsGoal", "caloriesGoal", "fgColor"
+        ];
+        var result = {} as Dictionary;
+        for (var i = 0; i < keys.size(); i++) {
+            var value = Application.Properties.getValue(keys[i]);
+            if (value != null) {
+                result[keys[i]] = value;
+            }
+        }
+        return result;
+    }
 
 
 }
