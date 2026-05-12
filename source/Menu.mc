@@ -5,12 +5,8 @@ import Toybox.Lang;
 class Menu extends WatchUi.Menu2 {
 
   function initialize() {
-    Log.debug("BEFORE Menu initialize");
-    Log.showMemoryUsage();
     Menu2.initialize({ :title => "Settings"});
     add_items();
-    Log.debug("AFTER Menu initialize");
-    Log.showMemoryUsage();
   }
 
   function add_items() {     
@@ -121,6 +117,8 @@ class MenuDelegate extends WatchUi.Menu2InputDelegate {
     else if (id.equals("fgColor")) {
       cycleColors(Settings.fgColor, item, id);
     }
+    (Application.getApp() as simplisticApp).analytics.trackSettings(Settings.getPropertiesAsDict());
+
   }
 
   function onBack() as Void {
