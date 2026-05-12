@@ -3,6 +3,5 @@ bin/
 python-helpers/*
 !python-helpers/*.py
 !python-helpers/*.txt
-.aider*
-screenshots/
-scratch
+supabase/.temp
+.env
