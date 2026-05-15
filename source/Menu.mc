@@ -90,8 +90,8 @@ class MenuDelegate extends WatchUi.Menu2InputDelegate {
 
   function onSelect(item) {
     var id = item.getId();
-    var arcKeys = [0, 2, 6, 8, 9, 11]; // only none, stress, body battery, % calories, % steps, battery level  
-    var batteryKeys = [0, 6, 8, 9, 11]; // only none, body battery, % calories, % steps, battery level    
+    var barKeys = [0, 2, 6, 7, 9, 11]; // only none, stress, body battery, % calories, % steps, battery level  
+    var batteryKeys = [0, 6, 7, 9, 11]; // only none, body battery, % calories, % steps, battery level    
   
     if (id.equals("Field1")) {
       cycleFields(Settings.SettingField1, item, id, null);
@@ -100,10 +100,10 @@ class MenuDelegate extends WatchUi.Menu2InputDelegate {
       cycleFields(Settings.SettingField2, item, id, null);
     }
     if (id.equals("barTop")) {
-      cycleFields(Settings.SettingBarTop, item, id, arcKeys);
+      cycleFields(Settings.SettingBarTop, item, id, barKeys);
     }
     if (id.equals("barBottom")) {
-      cycleFields(Settings.SettingBarBottom, item, id, arcKeys);
+      cycleFields(Settings.SettingBarBottom, item, id, barKeys);
     }
     if (id.equals("BatteryField")) {
       cycleFields(Settings.batterySetting, item, id, batteryKeys);
