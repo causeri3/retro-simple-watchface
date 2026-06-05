@@ -126,8 +126,13 @@ class MenuDelegate extends WatchUi.Menu2InputDelegate {
   }
 
   function onBack() as Void {
-        _view.dots = BenDayDotsRectangle.build();
-        WatchUi.requestUpdate();
+        // _view is null when the settings UI is reached via getSettingsView
+        // without getInitialView having run (Connect IQ Mobile path while
+        // the watch face is not the active face).
+        if (_view != null) {
+            _view.dots = BenDayDotsRectangle.build();
+            WatchUi.requestUpdate();
+        }
         WatchUi.popView(WatchUi.SLIDE_IMMEDIATE);
   }
 

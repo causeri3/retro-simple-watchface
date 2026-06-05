@@ -167,45 +167,67 @@ class Fields{
 
 
 module BenDayDotsRectangle {
-    var spacing = Dimensions.width/30;
-    var r = (spacing * 0.45);
+    // Geometry depends on Dimensions.width/height, which are only set once
+    // simplisticView.onLayout runs Dimensions.init(dc). Settings paths
+    // (onSettingsChanged, getSettingsView/onBack) can reach build() before
+    // onLayout, so initialize lazily via init() instead of eagerly at
+    // module-load time.
+    var spacing;
+    var r;
     var bg = 0x000000;
     var fg;
 
     var white = 0xFFFFFF;
     var _w = .9;
     var _h = .65;
-    var w = Dimensions.width * _w;
-    var h = Dimensions.height * _h;
-    // center
-    var cy = Dimensions.height * ((1 - _h) /2);
-    var cx = Dimensions.width * ((1 - _w) /2);
-   //var cx = 0;
+    var w;
+    var h;
+    var cy;
+    var cx;
 
-    // octagon distance to outer edged of ben day rectangle
-    var m = Dimensions.width * 0.125;
-    // octagon length of 45° corners
-    var b = Dimensions.width * 0.07;
+    var m;
+    var b;
 
-    var L = cx + m;
-    var T = cy + m;
-    var R = cx + w - m;
-    var B = cy + h - m;
+    var L;
+    var T;
+    var R;
+    var B;
 
-    // octagon points
-    var pts = [
-        [L + b, T], // left end of top horizontal
-        [R - b, T], // right end of top horizontal
-        [R, T + b], // upper-right 45° corner
-        [R, B - b], // right vertical
-        [R - b, B], // right end of bottom horizontal
-        [L + b, B], // left end of bottom horizontal
-        [L, B - b], // lower-left 45° corner
-        [L, T + b] // left vertical
+    var pts;
+
+    var benDayDotThickness;
+    var spacingWhiteOctogon;
+    var _ready = false;
+
+    function init() as Boolean {
+        if (Dimensions.width == null) { return false; }
+        spacing = Dimensions.width / 30;
+        r = (spacing * 0.45);
+        w = Dimensions.width * _w;
+        h = Dimensions.height * _h;
+        cy = Dimensions.height * ((1 - _h) / 2);
+        cx = Dimensions.width * ((1 - _w) / 2);
+        m = Dimensions.width * 0.125;
+        b = Dimensions.width * 0.07;
+        L = cx + m;
+        T = cy + m;
+        R = cx + w - m;
+        B = cy + h - m;
+        pts = [
+            [L + b, T],
+            [R - b, T],
+            [R, T + b],
+            [R, B - b],
+            [R - b, B],
+            [L + b, B],
+            [L, B - b],
+            [L, T + b]
         ] as Array<Array<Number>>;
-
-    var benDayDotThickness = Dimensions.width * 0.125;
-    var spacingWhiteOctogon = Dimensions.width * 0.1;
+        benDayDotThickness = Dimensions.width * 0.125;
+        spacingWhiteOctogon = Dimensions.width * 0.1;
+        _ready = true;
+        return true;
+    }
 
     function drawRectangleLine(bdc as Dc, penWidth as Number, spacing as Number, colour as Number){
         var L2 = L - spacing;
@@ -256,6 +278,7 @@ module BenDayDotsRectangle {
     }
 
     function build() as Graphics.BufferedBitmap? {
+        if (!_ready && !init()) { return null; }
         fg = Application.Properties.getValue("fgColor");
         var palette = [ bg, fg, white ];
         var bb;

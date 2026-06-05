@@ -50,7 +50,12 @@ class simplisticApp extends Application.AppBase {
     // New app settings have been received so trigger a UI update
     function onSettingsChanged() as Void{
         Settings.getProperties();
-        _view.dots = BenDayDotsRectangle.build();
+        // _view is null when settings arrive before getInitialView has run
+        // (e.g. settings UI opened via Connect IQ Mobile while the watch
+        // face is not the active face).
+        if (_view != null) {
+            _view.dots = BenDayDotsRectangle.build();
+        }
         analytics.trackSettings(Settings.getPropertiesAsDict());
         WatchUi.requestUpdate();
     }
