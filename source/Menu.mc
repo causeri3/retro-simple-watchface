@@ -41,7 +41,7 @@ class Menu extends WatchUi.Menu2 {
     );
     Menu2.addItem(
         new MenuItem(
-            Rez.Strings.barTop,
+            Rez.Strings.barBottom,
             Settings.getFieldString(Settings.SettingBarBottom),
             "barBottom", 
             {} 
